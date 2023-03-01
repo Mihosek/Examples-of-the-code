@@ -1,0 +1,45 @@
+// Menu Chooser
+// Demonstrates the switch statement
+#include <iostream>
+using namespace std;
+int main()
+{
+	enum difficulty { Novice = 1, Easy = 2, Normal = 3, Hard = 4, Extreme = 5 };
+	difficulty levels;
+	cout << "Difficulty levels are: \n\n";
+	cout << "1 - Novice\n";
+	cout << "2 - Easy\n";
+	cout << "3 - Normal\n";
+	cout << "4 - Hard\n";
+	cout << "5 - Extreme\n\n";
+
+	int myDifficulty;
+
+	cout << "Your choice is?... ";
+
+	cin >> myDifficulty;
+
+	levels = static_cast<difficulty>(myDifficulty);
+
+	switch (levels)
+	{
+	case 1:
+		cout << "You picked Novice.\n";
+		break;
+	case 2:
+		cout << "You picked Easy.\n";
+		break;
+	case 3:
+		cout << "You picked Normal.\n";
+		break;
+	case 4:
+		cout << "You picked Hard.\n";
+		break;
+	case 5:
+		cout << "You picked Extreme.\n";
+		break;
+	default:
+		cout << "You made an not available choice.\n";
+	}
+	return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+#include <string>
+
+int main()
+{
+    int num1 = 2;
+    int num2 = 14;
+    int num3 = 8;
+    int total = (num1 + num2 + num3) / 3;
+
+    cout << "The average of all three numbers is: " << total;
+
+    return 0;
+}
